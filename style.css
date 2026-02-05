@@ -2,18 +2,18 @@
       --bg-start: #fef5ee;
       --bg-mid: #96d295;
       --bg-end: #ffe0b9;
-   
-      --bg: linear-gradient(120deg, var(--bg-start), var(--bg-end));
-      --card:  rgba(255, 255, 255, 0.78);
+
+      /* --bg: linear-gradient(120deg, var(--bg-start), var(--bg-end)); */
+      --card: rgba(255, 255, 255, 0.78);
       --muted: #7a6f83;
-     
+
       --primary-start: #b295c9;
-      
+
       --primary-end: #455799;
-    
+
       --primary: linear-gradient(90deg, var(--primary-start), var(--primary-end));
       --accent: #e2a9ca;
-     
+
       --green: #2ecc71;
       --red: #ff6b6b;
       --glass: rgba(255, 255, 255, 0.78);
@@ -27,23 +27,46 @@
       box-sizing: border-box;
   }
 
- html {
-    min-height: 100%;
-    background: var(--bg);
-    background-attachment: fixed;
-}
+  html {
+      min-height: 100%;
+      background: linear-gradient(120deg,
+              #fef5ee,
+              #ffe0b9,
+              #c7f4f1,
+              #e0f5de,
+              #ddc5f1,
+              #dafffd,
+              #d7d7d8);
+      background-size: 400% 400%;
+      animation: gradientFlow 10s ease infinite;
+      background-attachment: fixed;
+  }
 
-body {
-    min-height: 100vh;
-    margin: 0;
-    background: transparent;
-}
+  body {
+      min-height: 100vh;
+      margin: 0;
+      background: transparent;
+  }
+
+  @keyframes gradientFlow {
+      0% {
+          background-position: 0% 50%;
+      }
+
+      50% {
+          background-position: 100% 50%;
+      }
+
+      100% {
+          background-position: 0% 50%;
+      }
+  }
 
 
   body {
       margin: 0;
       font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-      background: linear-gradient(180deg, #f8fafc, #eef2ff);
+      /* background: linear-gradient(180deg, #f8fafc, #eef2ff); */
       color: #0f172a;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -128,6 +151,7 @@ body {
   /* Elevation and hover animations for cards and list items */
   .card {
       transition: transform var(--trans), box-shadow var(--trans);
+      
   }
 
   .card:hover {
@@ -372,7 +396,7 @@ body {
 
   .tx-list-card {
       margin-top: 6px;
-      background-color: var(--bg);
+     
   }
 
   .tx-list {
@@ -746,15 +770,15 @@ body {
 
   @media (max-width:480px) {
       .app-header {
-          padding: 10px 12px
+          padding: 15px 15px 0 80px
       }
 
       .brand {
           font-size: 0.95rem
       }
-       
-      #addBtn{
-        font-size: 1.3rem;
+
+      #addBtn {
+          font-size: 1.3rem;
       }
 
       .header-controls {
