@@ -4,7 +4,7 @@ A simple web-based Expense Tracker application to manage daily expenses efficien
 
 ## Project Preview
 
-# Light Mode Preview Demo
+# Light Mode Preview Demo for PC
 <img width="1845" height="765" alt="Screenshot 2026-02-08 122235" src="https://github.com/user-attachments/assets/1b9045d2-7f43-4b6c-822b-5627f8a4d3d5" />
  
 # Dark Mode Preview Demo
